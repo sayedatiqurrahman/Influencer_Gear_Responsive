@@ -1,0 +1,376 @@
+/*================
+===== Font =====
+================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*================
+===== Font =====
+================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    
+}
+/*================
+===== Nav Section =====
+================== */
+.menu_left{
+    display:none;
+}
+.menu_2{
+    display:none;
+}
+.menu_2 ul{
+    list-style: none;
+}
+.nav{
+    display: flex;
+    max-width: 1200px;
+    margin: 87px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.menu ul img{
+    width: 100%;
+    height: 100%;
+}
+/*======================
+===== Header Section =====
+================== */
+
+.header{
+    display: flex;
+    max-width: 1188px;
+    height:  500px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.left_h{
+    width: 100%;
+}
+.left_h h1{
+    font-size: 5vw;
+}
+.left_h p{
+    margin: 16px 0px;
+}
+.btn_h{
+    background-color: #E02C6D;
+    color: #fff;
+    border-radius: 41px;
+    border: 0;
+    height: 44px;
+    padding: 0px 35px;
+}
+.right_h{
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat:no-repeat ;
+    background-size: contain;
+}
+.right_h .image_h{
+    width: 440px;
+}
+.right_h .image_h img{
+    width: 100%;
+}
+
+/*======================
+===== Company =====
+================== */
+.container{
+    width: 70%;
+    margin: 69px auto 100px;
+}
+.companys{
+  
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:61px;
+    box-shadow: 0 -5px 3px -3px rgba(0, 0, 0, 0.15), 0 5px 3px -3px rgba(0, 0, 0, 0.15);
+
+}
+
+/*======================
+===== Prosucts Cards =====
+================== */
+.collections{
+    max-width: 1047px;
+    margin: 76px auto;
+}
+
+.section_title{
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.card{
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.card .thum{
+    margin-top: 20px;
+    width: 100%;
+    height: 256px;
+    display: flex;
+    justify-content: center;
+}
+.thum img{}
+.card .detail{
+    padding: 16px 14px;
+}
+
+.detail h3 {
+    margin: 10px 0px;
+}
+
+.ratings p {
+    margin-bottom: 5px;
+    color: #5E6366;
+}
+.detail p{
+    margin-bottom: 15px;
+}
+.ratings i{
+    color: #FB8200;
+}
+.collections > p{
+ display: flex;
+ justify-content:end;
+ align-items: center;
+}
+
+/*======================
+===== Feature Prosucts  =====
+================== */
+.feature{
+    display: flex;
+    gap:96px;
+    align-items: center;
+    margin: 95px 0px;
+}
+
+.fea_detail {
+    text-align: ;
+}
+.fea_detail p{
+    margin: 16px 0px;
+}
+.btn_fea{
+    background-color: #E02C6D;
+    color: #fff;
+    height: 44px;
+    padding: 0px 24px;
+    border: 0;
+}
+
+/*======================
+===== Footer Section  =====
+================== */
+
+.footer{
+    width: 100%;
+    height: 250px;
+    background-color: #0A0826;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    display: flex;
+  
+    
+}
+.footer .info{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+
+}
+.footer .info p{
+    color: #D9DBE1;
+    font-size: 14px;
+  
+}
+
+
+.footer .info .social{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+.footer .info .social i{
+    width:32px;
+    height:32px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 100%;
+}
+.footer .info .social a{
+     text-decoration: none;
+    color: #fff;
+}
+
+/*==================================
+===== Responsive Media Query  =====
+================================ */
+
+
+
+
+
+
+/* Nav Breakpoint */
+
+@media only screen and (max-width:724px){
+    .nav{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+    text-align: center;
+    position: relative;
+    }
+    .logo{
+        grid-column: 2/span 3;
+    }
+    .menu_left{
+        display: block;
+    }
+    .menu_2{
+    display:block;
+    list-style: none;
+    }
+    .menu{
+        display: none;
+    }
+
+    .menu_left:hover~.menu{
+        display: block;
+    }
+
+    .menu ul{
+        position: fixed;
+        
+        background-color: #D9DBE1;
+        width: 100vh;
+        height: 100vh;
+        top: 80px;
+        left: 0;
+        right: 0;
+        padding: 30px;
+        text-align: center;
+
+    }
+
+
+    /*==================================
+===== Header responsive  =====
+================================ */
+.container{
+    width: 100%;
+}
+.header , .feature {
+    flex-direction: column-reverse;
+    margin-top: 130px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.left_h{
+    padding: 0pc 20px;
+}
+
+.right_h{
+    width: 90%;
+}
+.right_h img{
+    width: 90%;
+}
+
+
+/* Company */
+
+
+.companys{
+    padding-top: 100px;
+    box-shadow:none;
+}
+.collections{
+    padding-top: 100px;
+}
+    
+.cards{
+    grid-template-columns: repeat(1,329px);
+    justify-content: center;
+}
+
+
+
+
+/* .feature {
+    text-align: center;
+    padding: 0PX 20PX;
+    flex-direction: column-reverse;
+} */
+
+}
+
+
+
+@media only screen and (min-width:725px) and (max-width:1000px){
+   
+    .container{
+    width: 100%;
+}
+    .companys{
+    padding-top: 100px;
+    box-shadow:none;
+    }
+
+
+    .collections{
+    padding-top: 100px;
+}
+    .cards{
+    grid-template-columns: repeat(2,329px);
+    justify-content: center;
+}
+    
+}
+
+
+
+@media only screen and (min-wiDth:1420px){
+     .companys{
+        height: 110px;
+        width: 1200px;
+     }
+}
+
+
+
+
+
+
+
+
